@@ -1,0 +1,64 @@
+﻿<Window x:Class="Hotel.AdminWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Icon="iconwpf.png"
+        Title="AdminWindow" Height="460.8" Width="800" Background="#FF343434" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="530" Margin="0,0,-70.4,-98.8" VerticalAlignment="Top" Width="864" Source="fonadmin.jpg"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="29" Margin="189,16,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="212"/>
+        <Rectangle Fill="#FF603A65" HorizontalAlignment="Left" Height="29" Margin="445,16,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="326"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="27" Margin="563,264,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="208"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="29" Margin="189,132,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="212"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="27" Margin="563,296,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="208"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="55" Margin="441,201,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="330"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="119" Margin="10,171,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="391"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="60" Margin="441,264,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="89"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="29" Margin="189,53,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="212"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="29" Margin="189,92,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="212"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="49" Margin="10,295,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="335"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="144" Margin="441,52,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="330"/>
+        <Rectangle Fill="#FF603A65" HorizontalAlignment="Left" Height="29" Margin="13,12,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="120"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="115" Margin="13,45,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="162"/>
+        <ListBox x:Name="ListRoomsAdmin" HorizontalAlignment="Left" Height="85" Margin="18,69,0,0" VerticalAlignment="Top" Width="152" SelectionChanged="ListRoomsAdmin_SelectionChanged"/>
+        <TextBox x:Name="TextCategAdmin" HorizontalAlignment="Left" Height="23" Margin="277,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextPriceAdmin" HorizontalAlignment="Left" Height="22" Margin="277,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextOpisAdmin" HorizontalAlignment="Left" Height="90" Margin="13,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="384"/>
+        <TextBox x:Name="TextStatusAdmin" HorizontalAlignment="Left" Height="22" Margin="277,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="ComboHousemaidAdm" HorizontalAlignment="Left" Margin="13,318,0,0" VerticalAlignment="Top" Width="329" Height="22"/>
+        <TextBox x:Name="TextNumberAdmin" HorizontalAlignment="Left" Height="22" Margin="277,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSaveAdmin" Content="Сохранить" HorizontalAlignment="Left" Margin="93,379,0,0" VerticalAlignment="Top" Width="74" Click="btnSaveAdmin_Click" Height="31" BorderBrush="Black" Background="#FFC1FAAB"/>
+        <Button x:Name="NewAdmin" Content="Новая запись" HorizontalAlignment="Left" Margin="13,355,0,0" VerticalAlignment="Top" Width="154" Click="NewAdmin_Click" Background="#FF6F6F6F" BorderBrush="Black" Foreground="White"/>
+        <Button x:Name="btnDeleteAdmin" Content="Удалить" HorizontalAlignment="Left" Margin="13,379,0,0" VerticalAlignment="Top" Width="75" Click="btnDeleteAdmin_Click" Height="31" Foreground="Black" Background="#FFF78A8A" BorderBrush="Black"/>
+        <Button x:Name="btnAddHousemaid" Content="..." HorizontalAlignment="Left" Margin="363,316,0,0" VerticalAlignment="Top" Width="38" Click="btnAddHousemaid_Click" Height="28"/>
+        <Label Content="Номера" HorizontalAlignment="Left" Margin="18,45,0,0" VerticalAlignment="Top" Foreground="White" Height="27"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Margin="212,15,0,0" VerticalAlignment="Top" Foreground="White" Height="30" Width="48"/>
+        <Label Content="Категория" HorizontalAlignment="Left" Margin="201,53,0,0" VerticalAlignment="Top" Foreground="White" Height="29" Width="71"/>
+        <Label Content="Цена" HorizontalAlignment="Left" Margin="212,92,0,0" VerticalAlignment="Top" Foreground="White" Height="29" Width="38"/>
+        <Label Content="Статус" HorizontalAlignment="Left" Margin="212,132,0,0" VerticalAlignment="Top" Foreground="White" Height="29" Width="44"/>
+        <Label Content="Описание" HorizontalAlignment="Left" Margin="13,171,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Горничная" HorizontalAlignment="Left" Margin="18,292,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ListBox x:Name="ListClientsAdmin" HorizontalAlignment="Left" Height="114" Margin="445,78,0,0" VerticalAlignment="Top" Width="321" SelectionChanged="ListClientsAdmin_SelectionChanged"/>
+        <ComboBox x:Name="ComboClientAdm" HorizontalAlignment="Left" Margin="447,293,0,0" VerticalAlignment="Top" Width="77" Height="26"/>
+        <DatePicker x:Name="datePR" HorizontalAlignment="Left" Margin="668,266,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dateOTR" HorizontalAlignment="Left" Margin="668,298,0,0" VerticalAlignment="Top"/>
+        <Label Content="Постояльцы" HorizontalAlignment="Left" Margin="445,52,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Номер" HorizontalAlignment="Left" Margin="447,267,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Дата приезда" HorizontalAlignment="Left" Margin="575,264,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label Content="Дата отъезда" HorizontalAlignment="Left" Margin="577,296,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="ExitBtnAdmin" Content="Выход" HorizontalAlignment="Left" Margin="693,380,0,0" VerticalAlignment="Top" Width="73" FontFamily="Franklin Gothic Medium" Background="#FFA6A6A6" BorderBrush="Black" Height="31" Click="ExitBtnAdmin_Click"/>
+        <Button x:Name="BtnClientSave" Content="Сохранить" HorizontalAlignment="Left" Margin="563,337,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="BtnClientSave_Click"/>
+        <Button x:Name="BtnClientDelete" Content="Удалить" HorizontalAlignment="Left" Margin="678,337,0,0" VerticalAlignment="Top" Width="88" Height="28" Click="BtnClientDelete_Click"/>
+        <Button x:Name="btnBackAdmin" Content="Назад к авторизации" HorizontalAlignment="Left" Margin="544,380,0,0" VerticalAlignment="Top" Width="123" Height="31" FontFamily="Franklin Gothic Medium" Background="#FFA6A6A6" BorderBrush="Black" Click="btnBackAdmin_Click"/>
+        <Button x:Name="btnPrintWord" Content="Печать" HorizontalAlignment="Left" Margin="441,337,0,0" VerticalAlignment="Top" Width="89" BorderBrush="Black" Background="#FF6F6F6F" Foreground="White" Height="28" Click="btnPrintWord_Click"/>
+        <TextBox x:Name="txtNameClientAdm" HorizontalAlignment="Left" Height="23" Margin="447,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="447,201,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="SearchTxt" HorizontalAlignment="Left" Height="22" Margin="66,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" TextChanged="SearchTxt_TextChanged"/>
+        <Label Content="Поиск" HorizontalAlignment="Left" Margin="18,12,0,0" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="0.193,0.297" Height="29"/>
+        <TextBox x:Name="SearchTxtClient" HorizontalAlignment="Left" Height="22" Margin="503,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" TextChanged="SearchTxtClient_TextChanged"/>
+        <Label Content="Поиск" HorizontalAlignment="Left" Margin="453,18,0,0" VerticalAlignment="Top" Foreground="White" Height="29"/>
+    </Grid>
+</Window>

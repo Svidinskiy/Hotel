@@ -1,0 +1,26 @@
+﻿<Window x:Class="Hotel.HousemaidWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel"
+        mc:Ignorable="d"
+        Icon="iconwpf.png"
+        Title="Горничные" Height="295.407" Width="585.374" Background="#FF343434" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,3.6,0" RenderTransformOrigin="0.98,0.092">
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="29" Margin="259,10,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="287"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="29" Margin="259,56,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="196"/>
+        <Rectangle Fill="#FF121212" HorizontalAlignment="Left" Height="235" Margin="5,9,0,0" RadiusY="5" RadiusX="5" Stroke="Black" VerticalAlignment="Top" Width="240"/>
+        <TextBox x:Name="TxtHouesemName" HorizontalAlignment="Left" Height="22" Margin="312,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="txtHousemPhone" HorizontalAlignment="Left" Height="22" Margin="333,59,0,0" TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Top" Width="118" FontSize="16"/>
+        <ListBox x:Name="ListHousemaid" HorizontalAlignment="Left" Height="204" Margin="10,35,0,0" VerticalAlignment="Top" Width="230" SelectionChanged="ListHousemaid_SelectionChanged"/>
+        <Button x:Name="btnSaveHouse" Content="Сохранить" HorizontalAlignment="Left" Margin="259,172,0,0" VerticalAlignment="Top" Width="146" Click="btnSaveHouse_Click" BorderBrush="Black" Background="#FF99F48C" Height="35"/>
+        <Button x:Name="btnDeleteHouse" Content="Удалить" HorizontalAlignment="Left" Margin="410,172,0,0" VerticalAlignment="Top" Width="136" Click="btnDeleteHouse_Click" BorderBrush="Black" Background="#FFF98383" Height="35"/>
+        <Button x:Name="btnNewHouse" Content="Новая запись" HorizontalAlignment="Left" Margin="323,132,0,0" VerticalAlignment="Top" Width="174" Click="btnNewHouse_Click" Height="22" BorderBrush="Black" Background="#FFEEBEF9"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" IsEnabled="False" Background="{x:Null}" Foreground="White"/>
+        <Label Content="ФИО" HorizontalAlignment="Left" Margin="270,10,0,0" VerticalAlignment="Top" Foreground="White" Height="29"/>
+        <Label Content="Телефон" HorizontalAlignment="Left" Margin="270,56,0,0" VerticalAlignment="Top" Foreground="White" Height="29"/>
+        <Button x:Name="btnBackHouse" Content="Назад" HorizontalAlignment="Left" Margin="365,229,0,0" VerticalAlignment="Top" Width="86" Background="#FF232222" BorderBrush="Black" Foreground="White" Click="btnBackHouse_Click"/>
+
+    </Grid>
+</Window>
